@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Null Society Style Website</title>
+    <title>Fern Itthisang' Archives</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header">
+        <div class="header-left"><span>Fern Itthisang</span></div>
+        <div class="header-right"><span>Project Archive</span></div>
+    </div>
     <div class="container">
         <div class="column-small">
-            <h1>Fern Itthisang</h1>
             <div class="box collapsed"><div class="box-title"><div class="icon"><span class="arrow">↗</span></div>Say Hello!</div><div class="content">
                 <p>Hello! I'm Fern Itthisang</p>
                 <p>Currently, I'm a designer who is passionate about data visualization, interactive design, and creating human-centric digital experiences. My journey began with architecture, where I learned to visualize space and create environments that resonate with human experience. Over time, I discovered that data could tell stories too—stories that shape how we perceive and understand the world.</p>
@@ -43,138 +46,187 @@
             <div class="box collapsed"><div class="box-title"><div class="icon"><span class="arrow">↗</span></div>Let's Connect!</div><div class="content">
                 <p><b> pakjira[dot]itt[at]gmail[dot]com</b></p>
                 </div></div>
-            
-            <div class="box collapsed">
-                <div class="box-title">
-                <div class="icon"><span class="arrow">↗</span></div>
-                    Talk to me!
-                </div>
-                <div class="content">
-                    <div id="chat">Tell me something... To post, click the box below and type!</div>
-                    <input id="username" placeholder="Your name" />
-                    <input id="message" placeholder="Type a message..." />
-                    <button id="send">Send</button>
-                </div></div>
-            <div class="box"><div class="box-title"><div class="icon"><span class="arrow">↗</span></div>More Projects</div><div class="content">Explore more of my projects on this<a href="https://www.fernitthisang.com/">Website</a>.</div></div>
         </div>
-
         <div class="column-large">
-            <div class="project-card">
-                <div class="project-images">
-                    <img src="assets/thumbnail.png" alt="Project Image 1" />
+            <button id="back-btn" style="display:none">Back</button>
+            <div id="project-container" class="project-container">    
+                <div class="project-card" data-project="1">
+                    <div class="project-thumbnail">
+                        <img src="assets/thumbnail.png" alt="Project Thumbnail" />
+                    </div>
+                    <div class="project-title">Companion, Cohabitant <br>and Continuum (Cee)</div>
                 </div>
-                <div class="project-meta">
-                    <span class="project-title">Companion, Cohabitant and Continuum (Cee)</span>
-                    <span class="project-date">Fall 2024 - Spring 2025</span>
-                </div>
-                <div class="project-description">
-                    This project reimagines a robotic vacuum as a living companion, blending emotional intelligence, contextual awareness, and adaptive behavior. Named "Cee" (Companion, Cohabitant, Continuum), it integrates four personas—Butler, Fortuneteller, Therapist, and Cleaner—each offering unique interactions and movements.
 
-                    Cee actively engages with its surroundings, responding to human presence and environmental changes with expressive OLED eyes and voice feedback. The Butler welcomes guests, the Fortuneteller predicts the day, the Therapist offers comfort, and the Cleaner maintains tidiness without intrusion.
-                    
-                    By combining AI-driven emotional responses, contextual dialogue, and adaptive movement, Cee transforms routine cleaning into a dynamic cohabitation experience.
+                <div class="project-card" data-project="2">
+                    <div class="project-thumbnail">
+                        <img src="assets/0090.png" alt="Project Thumbnail" />
+                    </div>
+                    <div class="project-title">The Roomba Eye View</div>
                 </div>
-                <a class="learn-more-btn" href="https://gsapp-cdp.github.io/archive/projects/2025/companion-cohabitant-and-continuum/" target="_blank">Learn More</a>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-thumbnail">
+                        <img src="assets/symbol.png" alt="Project Thumbnail" />
+                    </div>
+                    <div class="project-title">Codes of Protest and <br>Predicting Solidarity</div>
+                </div>
+
+                <div class="project-card" data-project="4">
+                    <div class="project-thumbnail">
+                        <img src="assets/document.gif" alt="Project Thumbnail" />
+                    </div>
+                    <div class="project-title">Documenting Protest Symbols</div>
+                </div>
+
+                <div class="project-card" data-project="5">
+                    <div class="project-thumbnail">
+                        <img src="assets/fare.gif" alt="Project Thumbnail" />
+
+                    </div>
+                    <div class="project-title">Equal Fare, Unequal Ground</div>
+                </div>
+
+                <div class="project-card" data-project="6">
+                    <div class="project-thumbnail">
+                        <img src="assets/flipframe.png" alt="Project Thumbnail" />
+                    </div>
+                    <div class="project-title">FlipFrame</div>
+                </div>
             </div>
-
-            <div class="project-card">
+            <div id="project-details" class="project-details">
+                <div class="project-card-details" data-project="1">
                 <div class="project-images">
-                    <div class="project-images-carousel">
-                        <button class="carousel-arrow left">&#8592;</button>
-                        <div class="carousel-track">
-                            <video controls width="100%" style="border-radius: 4px;">
-                                <source src="assets/animation.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <!-- <img src="assets/0170.png" alt="The Roomba Eye View Image 1" />
-                            <img src="assets/0090.png" alt="The Roomba Eye View Image 2" /> -->
+                        <div class="project-images-carousel">
+                            <div class="carousel-track">
+                                <img src="assets/thumbnail.png" alt="Project Image 1" />
+                                <img src="assets/demo.gif" alt="FlipFrame Project Image 3" />
+                                <img src="assets/about.png" alt="FlipFrame Project Image 3" />
+                            </div>
                         </div>
-                        <button class="carousel-arrow right">&#8594;</button>
+                    </div>
+                    <div class="project-title-row">
+                        <div class="project-title">Companion, Cohabitant <br>and Continuum (Cee)</div>
+                        <span class="project-date">Fall 2024 - Spring 2025</span>
+                    </div>
+                    <div class="project-description">
+                        This project reimagines a robotic vacuum as a living companion, blending emotional intelligence, contextual awareness, and adaptive behavior. Named "Cee" (Companion, Cohabitant, Continuum), it integrates four personas—Butler, Fortuneteller, Therapist, and Cleaner—each offering unique interactions and movements.
+
+                        Cee actively engages with its surroundings, responding to human presence and environmental changes with expressive OLED eyes and voice feedback. The Butler welcomes guests, the Fortuneteller predicts the day, the Therapist offers comfort, and the Cleaner maintains tidiness without intrusion.
+                        
+                        By combining AI-driven emotional responses, contextual dialogue, and adaptive movement, Cee transforms routine cleaning into a dynamic cohabitation experience.
+                    </div>
+                    <a class="learn-more-btn" href="https://gsapp-cdp.github.io/archive/projects/2025/companion-cohabitant-and-continuum/" target="_blank">Visit Project</a>
+                </div>
+                <div class="project-card-details" data-project="2">
+                    <div class="project-images">
+                        <video controls width="100%" style="border-radius: 4px;">
+                            <source src="assets/animation.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video> 
+                    </div>
+                    <div class="project-title-row">
+                        <div class="project-title">The Roomba Eye View</div>
+                        <span class="project-date">Fall 2024</span>
+                    </div>
+                    <div class="project-description">
+                        <p>A unique perspective on urban spaces through the lens of a Roomba vacuum cleaner. This project examines how autonomous devices like the Roomba perceive and move through our living environments. It looks at how these devices interact with everyday spaces and how they make decisions while navigating. By studying the Roomba's movements and reactions, the project offers insights into how technology and spatial awareness intersect in our homes.</p>
+
+                        <p>This concept played an important role in the research for the capstone project, Companion, Cohabitant, and Continuum (Cee). The idea was to see the world from the Roomba's point of view and use that perspective to better understand the relationship between robotic companions and domestic spaces. To achieve this, the project used the idea of rendering—a way to visualize how the Roomba perceives its surroundings. Additionally, a short story was created to imagine the Roomba's experiences and how it might interpret the space around it. This helped shape the project's direction by highlighting how robotic companions might feel more integrated and connected to the spaces they inhabit.</p>
+
+
                     </div>
                 </div>
-                <div class="project-meta">
-                    <span class="project-title">The Roomba Eye View</span>
-                    <span class="project-date">Fall 2024</span>
+                <div class="project-card-details" data-project="3">
+                    <div class="project-images">
+                        <video controls width="100%" style="border-radius: 4px;">
+                            <source src="assets/protest.mov" type="video/mp4"au>
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="project-title-row">
+                        <div class="project-title">Codes of Protest and <br>Predicting Solidarity</div>
+                        <span class="project-date">Fall 2024</span>
+                    </div>
+                    <div class="project-description">
+                        <p>An exploration of protest movements through data visualization and machine learning. This project takes a closer look at how protest symbols and solidarity movements evolve and spread. By using data visualization techniques and machine learning, the project uncovers patterns in the ways people express resistance and support for social change.</p>
+                        <p>The goal is to better understand the visual language of protests—how symbols, signs, and actions come together to convey powerful messages. Through analyzing data from various movements, the project reveals the connections between different acts of solidarity and highlights the complex ways communities come together to make their voices heard.</p>
+                        
+                        <p>This approach not only sheds light on the visual aspects of protests but also deepens our understanding of how social movements communicate and grow. It aims to capture the dynamic and ever-changing nature of collective action, offering a new way to study and interpret the language of resistance.</p>
+                    </div>
+                    <a class="learn-more-btn" href="#" target="_blank">Visit Project</a>            
                 </div>
-                <div class="project-description">
-                    A unique perspective on urban spaces through the lens of a Roomba vacuum cleaner. This project explores how autonomous devices perceive and navigate our living environments, offering insights into the intersection of domestic technology and spatial awareness. which is the part that I use for reserach for the capstone project or Companion, Cohabitant and Continuum (Cee) to understanding and scoping out the project by using the idea of rendering to understand the perspective of Roomba and creating the short story of the Roomba.
-                </div>
-            </div>
+                <div class="project-card-details" data-project="4">
+                    <div class="project-images">
+                        <img src="assets/document.gif" alt="Protest Symbols Documentation" />
+                    </div>
+                    <div class="project-title-row">
+                        <div class="project-title">Documenting Protest Symbols</div>
+                        <span class="project-date">Fall 2024</span>
+                    </div>
+                    <div class="project-description">
+                        <p>A comprehensive documentation of protest symbols and their evolution in contemporary social movements. This project aims to capture the visual language of resistance and how it shapes collective memory and social change. It focuses on understanding how protest symbols develop, change, and take on new meanings over time.</p>
 
-            <div class="project-card">
-                <div class="project-images">
-                    <video controls width="100%" style="border-radius: 4px;">
-                        <source src="assets/protest.mov" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                        <p>The project is part of the Codes of Protest and Predicting Solidarity initiative, which explores how symbols used in protests evolve as social movements grow. The goal is to document these symbols, analyze their visual elements, and understand how their meanings are interpreted and reinterpreted within different contexts.</p>
+                        
+                        <p>Through data collection and analysis, this project seeks to map out the journey of protest symbols—from their origins to their use in modern movements. By examining how these symbols spread and transform, the project offers insights into how collective action is visually communicated and how symbols continue to inspire and unite people.</p>
+                    </div>
+                    <a class="learn-more-btn" href="https://fernitthisang.github.io/coding-practices-fall2024/project/desktop/index.html" target="_blank">Visit Project</a>
                 </div>
-                <div class="project-meta">
-                    <span class="project-title">Codes of Protest and Predicting Solidarity</span>
-                    <span class="project-date">Fall 2024</span>
-                </div>
-                <div class="project-description">
-                    An exploration of protest movements through data visualization and machine learning. This project analyzes patterns in protest symbols and solidarity movements, revealing the complex language of social change and collective action.
-                </div>
-                <a class="learn-more-btn" href="#" target="_blank">Learn More</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-images">
-                    <img src="assets/document.gif" alt="Protest Symbols Documentation" />
-                </div>
-                <div class="project-meta">
-                    <span class="project-title">Documenting Protest Symbols</span>
-                    <span class="project-date">Fall 2024</span>
-                </div>
-                <div class="project-description">
-                    A comprehensive documentation of protest symbols and their evolution in contemporary social movements. This project captures the visual language of resistance and its impact on collective memory and social change.
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-images">
-                    <div class="project-images-carousel">
-                        <button class="carousel-arrow left">&#8592;</button>
-                        <div class="carousel-track">
-                            <img src="assets/equal-fare-1.png" alt="Equal Fare Project Image 1" />
-                            <img src="assets/equal-fare-2.png" alt="Equal Fare Project Image 2" />
-                            <img src="assets/equal-fare-3.png" alt="Equal Fare Project Image 3" />
+                <div class="project-card-details" data-project="5">
+                    <div class="project-images">
+                        <div class="project-images-carousel">
+                            <div class="carousel-track">
+                                <video controls width="100%" height="400" style="border-radius: 4px;">
+                                    <source src="assets/eq2.mov" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <img src="assets/eq3.png" alt="Equal Fare Project Image 2" />
+                            </div>
                         </div>
-                        <button class="carousel-arrow right">&#8594;</button>
+                    </div>
+                    <div class="project-title-row">
+                        <div class="project-title">Equal Fare, Unequal Ground</div>
+                        <span class="project-date">Spring 2025</span>
+                    </div>
+                    <div class="project-description">
+                        <p>An investigation into transportation equity and accessibility in urban environments. This project visualizes the disparities in public transit access and proposes solutions for more equitable transportation systems. It is an interactive memory walkthrough built in Unity that reconstructs fragments of New York City subway stations. The project uses scanned elements—like mosaic walls, cracked tiles, benches, and trash cans—to create layered stories about how people occupy transit spaces in ways that are often overlooked. To convey this perspective, the project adopts a lower angle, resembling a third-person view from the perspective of a rat.</p>
+
+                        <p>The focus is on how public infrastructure, such as the subway, can simultaneously serve as shelter and exclusion. Some people easily tap through OMNY gates and ride the trains, while others claim benches or corners as their homes. I wanted to explore this contrast between mobility and immobility within the same space.</p>
+                        
+                        <p>By incorporating elements like fog, spotlighting, and ambient sound, users experience these zones not as typical transit spaces but as memory spaces—places that hold traces of lived survival. Each interactive object reveals a fragment of someone's life: a person who slept on a bench, played music in a corner, or simply tried to stay warm during harsh conditions.</p>
+                        
+                        <p>The project is inspired by a climate justice perspective, questioning how cities prepare for environmental challenges while leaving vulnerable people exposed underground. It reflects on how ordinary infrastructure becomes quietly political—not just in terms of who moves through the station, but who is allowed to stay.</p>
+                        
+                        <p>My intention was not to simulate homelessness, but to reflect on how everyday public spaces, like subway stations, carry silent stories of both shelter and displacement. The project encourages viewers to think about the hidden lives within urban infrastructure and to consider the social implications of transit accessibility.</p>
+                    </div>
+                    <a class="learn-more-btn" href="https://play.unity.com/en/games/730f031b-d23f-4540-8f3e-f9b2890ac9a8/equal-fare-unequal-ground" target="_blank">Visit Project</a>
+                </div>
+                <div class="project-card-details" data-project="6">
+                    <div class="project-images">
+                        <div class="project-images-carousel">
+                            <div class="carousel-track">
+                                <img src="assets/flipframe.png" alt="FlipFrame Project Image 1" />
+                                <img src="assets/flipframe-2.JPG" alt="FlipFrame Project Image 2" />
+                                <img src="assets/flip-frame-3.gif" alt="FlipFrame Project Image 2" />
+อ
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-title-row">
+                        <div class="project-title">FlipFrame</div>
+                        <span class="project-date">Spring 2025</span>
+                    </div>
+                    <div class="project-description">
+                        <p>An innovative digital frame that transforms static images into dynamic storytelling experiences. FlipFrame merges traditional photography with interactive technology to create engaging visual narratives. It takes the concept of a photo frame to the next level by allowing images to move, change, and tell stories.</p>
+
+                        <p>Instead of just displaying a single picture, FlipFrame can sequence images, animate transitions, and respond to user interactions. This makes each visual experience more immersive and captivating. Whether it's showcasing personal memories or artistic creations, FlipFrame turns still images into living stories, blending the familiarity of photography with the excitement of digital interaction.</p>
+                        
                     </div>
                 </div>
-                <div class="project-meta">
-                    <span class="project-title">Equal Fare, Unequal Ground</span>
-                    <span class="project-date">Spring 2025</span>
-                </div>
-                <div class="project-description">
-                    An investigation into transportation equity and accessibility in urban environments. This project visualizes the disparities in public transit access and proposes solutions for more equitable transportation systems.
-                </div>
-                <a class="learn-more-btn" href="https://play.unity.com/en/games/730f031b-d23f-4540-8f3e-f9b2890ac9a8/equal-fare-unequal-ground" target="_blank">Learn More</a>
-            </div>
-
-            <div class="project-card">
-                <div class="project-images">
-                    <div class="project-images-carousel">
-                        <button class="carousel-arrow left">&#8592;</button>
-                        <div class="carousel-track">
-                            <img src="assets/flipframe.png" alt="FlipFrame Project Image 1" />
-                            <img src="assets/flipframe-2.png" alt="FlipFrame Project Image 2" />
-                            <img src="assets/flipframe-3.png" alt="FlipFrame Project Image 3" />
-                        </div>
-                        <button class="carousel-arrow right">&#8594;</button>
-                    </div>
-                </div>
-                <div class="project-meta">
-                    <span class="project-title">FlipFrame</span>
-                    <span class="project-date">Spring 2025</span>
-                </div>
-                <div class="project-description">
-                    An innovative digital frame that transforms static images into dynamic storytelling experiences. FlipFrame combines traditional photography with interactive technology to create engaging visual narratives.
-                </div>
-            </div>
+            </div>  
         </div>
     </div>
     <script type="module" src="script.js"></script>
+   
 </body>
 </html>
